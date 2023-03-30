@@ -44,7 +44,7 @@ function generateUsers() {
   const username = `defUser`;
   const email = `defUser@email.com`;
   const bio = `defUser-bio`;
-  const image = `https://example.com/defUser.jpg`;
+  const image = `https://e.c/defUser.jpg`;
 
   const user = new User({
     username,
@@ -59,7 +59,7 @@ function generateUsers() {
     const username = `usertemp${i}`;
     const email = `usertemp${i}@email.com`;
     const bio = `usertemp${i}-bio`;
-    const image = `https://example.com/usertemp.jpg`;
+    const image = `https://e.c/usertemp.jpg`;
     
     const user = new User({
       username,
@@ -87,10 +87,10 @@ function generateItems(user) {
     const slug = `defItem`;
     const title = `defItem`;
     const description = `This is defItem`;
-    const image = `https://example.com/defItem.jpg`;
+    const image = `https://e.c/defItem.jpg`;
     const favoritesCount = Math.floor(Math.random() * 100);
     const comments = [];
-    const tagList = ['tag1', 'tag2', 'tag3'];
+    const tagList = ['tag1'];
     const sellerId = user;
   
     const item = new Item({
@@ -110,10 +110,10 @@ function generateItems(user) {
       const slug = `item-temp-${i}`;
       const title = `Item-temp-${i}`;
       const description = `This is item-temp-${i}`;
-      const image = `https://example.com/item-temp-${i}.jpg`;
+      const image = `https://e.c/item-temp-${i}.jpg`;
       const favoritesCount = Math.floor(Math.random() * 100);
       const comments = [];
-      const tagList = ['tag1', 'tag2', 'tag3'];
+      const tagList = ['tag1'];
       const sellerId = user;
   
       const item = new Item({
